@@ -1,0 +1,242 @@
+ 
+
+body {
+    background-color: rgb(235, 234, 198);
+    padding-top: 110px;  
+    font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+}
+ 
+.head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(211, 166, 108);
+    z-index: 1000;
+    padding: 0 20px;
+}
+ 
+.buttona {
+    transition: 0.3s ease;
+    text-decoration: none;
+    font-size: 36px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    padding: 5px 5px 5px 5px;
+    color: rgb(98, 26, 165);
+    display: inline-block;
+    white-space: nowrap;
+}
+.buttona:hover {
+    background-color: rgb(98, 26, 165);
+    color: antiquewhite;
+}
+
+ 
+.ru, .ru2 {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 0;            
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+.ru { margin-top: 0; }
+.ru2 { margin-top: 3rem; }
+
+ 
+.cont, .cont2, .cont3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1vw;
+    height: auto;          
+}
+.cont2{
+margin-top: 1vw;
+}
+ 
+.blockkonstr {
+    width: 50%;
+    min-height: 600px;
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px rgb(71, 71, 71);
+    overflow: hidden;
+}
+
+ 
+.block1 {
+    width: 35%;
+    padding: 20px 0 20px 15px;
+}
+.block2 {
+    width: 65%;
+    padding: 20px 15px 20px 0;
+}
+
+ 
+.block1 img {
+    width: 90%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
+    margin: 0 auto 15px auto;
+    display: block;
+}
+
+h2 {
+    margin-left: 5%;
+    height: auto;
+    color: rgb(124, 42, 9);
+    margin-top: 1rem;
+    font-size: 1.3rem;
+}
+p {
+    margin-left: 5%;
+    font-size: 1.2rem;
+}
+.descr {
+    margin-left: 0;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #2c3e2f;
+}
+
+ 
+.hiscar {
+    margin-top: 20px;
+}
+.cars {
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+.car {
+    flex: 1;
+    text-align: center;
+    min-width: 120px;
+}
+.car img {
+    width: 150px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
+    margin: 0 auto;
+}
+.name {
+    display: block;
+    font-size: 1rem;
+    margin-top: 8px;
+    font-weight: 500;
+}
+
+ 
+@media (max-width: 768px) {
+    body {
+        padding-top: 130px;  
+    }
+
+     
+    .head {
+        gap: 15px;
+        height: auto;
+        flex-wrap: wrap;
+        padding: 12px 15px;
+        background-color: rgb(211, 166, 108);
+    }
+    .buttona {
+        font-size: 20px;
+        padding: 8px 14px;
+        white-space: nowrap;
+    }
+
+   
+    .ru, .ru2 {
+        font-size: 1.8rem;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+ 
+    .cont, .cont2, .cont3 {
+        margin-top: 20px;
+        height: auto;
+    }
+ 
+    .blockkonstr {
+        width: 95%;
+        flex-direction: column;
+        min-height: auto;
+        height: auto;
+    }
+ 
+    .block1, .block2 {
+        width: 90%;
+        margin-left: 5%;
+    }
+    .block1 {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .block1 img {
+        width: 70%;
+        margin-bottom: 10px;
+        margin-left: 9.9%;
+    }
+ 
+    h1 {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    .descr {
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+    p, h2 {
+        margin-left: -4%;
+        text-align: center;
+    }
+    h2 {
+        font-size: 1.2rem;
+        margin-top: 15px;
+    }
+ 
+    .cars {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+    .car {
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
+    }
+    .car img {
+        width: 100%;
+        height: auto;
+        max-width: 220px;
+    }
+    .name {
+        font-size: 1rem;
+    }
+}
+
